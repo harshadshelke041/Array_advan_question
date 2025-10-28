@@ -15,4 +15,7 @@ num[num.length-1] = copy;
 console.log(num);
 
 
+// 2 -
+
+
 
