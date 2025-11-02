@@ -127,3 +127,29 @@ function reverse(i,j) {
 
 console.log(num);
 
+// remove duplicates from a sorted array (like [1,2,2,2,5])
+
+let num = [1, 2, 2, 2, 5];
+
+
+duplicate(num)
+
+function duplicate(num) {
+  let j = 1;
+
+  for (let i = 0; i < num.length - 1; i++) {
+
+    if (num[i] != num[i + 1]) {
+      num[j] = num[i + 1]
+      j++;
+    }
+  }
+  return j
+
+}
+
+console.log(num);
+
+
+
+
