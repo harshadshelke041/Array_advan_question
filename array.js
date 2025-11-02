@@ -78,7 +78,52 @@ for (let i = 0; i < k; i++) {
   num[0] = copy
 }
 
+// Best approch to moveing elemnt by right by k element
+
+let num = [1,2,3,4,5];
+let k = 2 ;
+k = k % num.length;
+
+reverse(0,num.length-1)
+reverse(0,k-1)
+reverse(k,num.length-1)
+ console.log(num);
+ 
+
+function reverse(i,j) {
+  while(i<j) {
+    let temp = num[i];
+    num[i] = num[j];
+    num[j] = temp;
+    i++
+    j--
+  }
+}
+
 console.log(num);
 
+// Best approch to moveing elemnt by right by k element
 
+let num = [1,2,3,4,5];
+let k = 2 ;
+k = k % num.length;
+
+
+reverse(0,k-1)
+reverse(k,num.length-1)
+reverse(0,num.length-1)
+ console.log(num);
+ 
+
+function reverse(i,j) {
+  while(i<j) {
+    let temp = num[i];
+    num[i] = num[j];
+    num[j] = temp;
+    i++
+    j--
+  }
+}
+
+console.log(num);
 
