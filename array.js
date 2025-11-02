@@ -150,6 +150,33 @@ function duplicate(num) {
 
 console.log(num);
 
+//Merge Two Sorted Arrays
+
+  let num1 = [2, 5, 6]
+let num2 = [1, 3, 4, 8]
+let merge = new Array(num1.length + num2.length)
+let i = j = k = 0;
+
+while (i < num1.length && j < num2.length) {
+
+  if (num1[i] < num2[j]) {
+    merge[k++] = num1[i++]
+  } else {
+    merge[k++] = num2[j++]
+  }
+}
+
+while (i < num1.length) {
+  merge[k++] = num1[i++]
+}
+
+while (j < num2.length) {
+  merge[k++] = num2[j++]
+}
+
+console.log(merge);
+
+
 
 
 
