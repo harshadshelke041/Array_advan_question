@@ -200,6 +200,39 @@ function profit(prices) {
 
 console.log(profit(prices)); 
 
+// Sort the color 
+
+let nums = [0, 1, 2, 0, 1, 0, 1, 2];
+
+let i = 0;
+let j = 0;
+let k = nums.length - 1;
+
+while (j <= k) {
+
+  if (nums[j] === 0) {
+    swap(nums, j, i)
+    i++;
+    j++;
+  }
+  else if (nums[j] === 2) {
+    swap(nums, j, k)
+    k--
+  }
+  else {
+    j++
+  }
+}
+
+function swap(arr, a, b) {
+  let temp = arr[a]
+  arr[a] = arr[b]
+  arr[b] = temp
+}
+
+console.log(nums);
+
+
 
 
 
