@@ -250,6 +250,25 @@ for (let i = 0; i < num.length; i++) {
 
 console.log(max);
 
+// Majority Element
+
+let num = [2, 2, 1, 1, 1, 2, 2]
+
+let ans = num[0];
+let count = 1;
+
+for (const n of num) {
+
+  if (count == 0) {
+    ans = n
+    count = 1
+  } else if (n == ans) count++
+  else count--
+}
+
+console.log(count);
+
+
 
 
 
