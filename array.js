@@ -160,7 +160,9 @@ let i = j = k = 0;
 while (i < num1.length && j < num2.length) {
 
   if (num1[i] < num2[j]) {
-    merge[k++] = num1[i++]
+    merge[k] = num1[i]
+    i++;
+    k++
   } else {
     merge[k++] = num2[j++]
   }
